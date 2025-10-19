@@ -1,0 +1,80 @@
+{
+  "overallOutstanding": 123456,
+  "cards": [
+    {
+      "label": "Invoice Received",
+      "totalValue": "1234",
+      "amountValue": "123456",
+      "icon": "inv_rec"
+    },
+    {
+      "label": "Payable amount",
+      "totalValue": "1234",
+      "amountValue": "123456",
+      "icon": "pay_amount"
+    },
+    {
+      "label": "Overdue",
+      "totalValue": "1234",
+      "amountValue": "123456",
+      "icon": "overdue"
+    },
+    {
+      "label": "Paid amount",
+      "totalValue": "1234",
+      "amountValue": "123456",
+      "icon": "paid_amount"
+    },
+    {
+      "label": "Rejected",
+      "totalValue": "1234",
+      "amountValue": "123456",
+      "icon": "rejected"
+    },
+    {
+      "label": "Dispute",
+      "totalValue": "1234",
+      "amountValue": "123456",
+      "icon": "dispute"
+    },
+    {
+      "label": "Department",
+      "totalValue": "1234",
+      "amountValue": "123456",
+      "icon": "department"
+    },
+    {
+      "label": "Vendors",
+      "totalValue": "1234",
+      "amountValue": "123456",
+      "icon": "vendors"
+    }
+  ],
+  "dueSummary": {
+    "penaltySaved": 12500,
+    "ageGroups": [
+      { "days": "7 Days", "amount": 25000 },
+      { "days": "15 Days", "amount": 45000 },
+      { "days": "30 Days", "amount": 30000 },
+      { "days": "45 Days", "amount": 15000 },
+      { "days": "60 Days", "amount": 15000 },
+      { "days": "90 Days", "amount": 15000 },
+      { "days": "180 Days+", "amount": 15000 }
+    ]
+  },
+  "graphs": {
+    "queues": [
+      { "label": "Processing Queue", "value": 140, "fill": "#EE7777" },
+      { "label": "Exception Queue", "value": 75, "fill": "#4BAAB4" },
+      { "label": "Duplicate Queue", "value": 27, "fill": "#1F2439" },
+      { "label": "Missing PO Queue", "value": 25, "fill": "#F5B461" },
+      { "label": "Receipt Hold Queue", "value": 50, "fill": "#F9C480" },
+      { "label": "Supplier Portal Queue", "value": 20, "fill": "#EA5455" }
+    ],
+    "kpi" : [
+      { "label": "Role", "value": 56, "fill": "#EE7777" },
+      { "label": "Person Responsible", "value": 24, "fill": "#1F2439" },
+      { "label": "Triggers Alert", "value": 20, "fill": "#F5B461" }
+    ]
+  }
+}
