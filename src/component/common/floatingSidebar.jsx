@@ -13,17 +13,18 @@ const sidebarData = [
   {
     icon: dashboard,
     title: "Dashboard",
+    href: "/dashboard",
     isActive: true,
   },
   {
     icon: report,
     title: "Report",
+    href: "/dashboard/invoice-received",
     isActive: false,
   },
   {
     icon: addInv,
     title: "Add Invoice",
-    href: "/dashboard/invoice-received",
     isActive: false,
   },
   {
@@ -40,7 +41,7 @@ const sidebarData = [
     icon: briefcase,
     title: "Company",
     isActive: false,
-  }
+  },
 ];
 
 const FloatingSidebar = () => {

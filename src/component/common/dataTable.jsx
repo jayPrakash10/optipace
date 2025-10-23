@@ -30,8 +30,8 @@ export const columns = [
 const formatDate = (dateString) => {
   if (!dateString) return "";
   const date = new Date(dateString);
-  const day = String(date.getDate()).padStart(2, '0');
-  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, "0");
+  const month = String(date.getMonth() + 1).padStart(2, "0");
   const year = date.getFullYear();
   return `${day}-${month}-${year}`;
 };
@@ -45,17 +45,20 @@ const DataTable = ({ data = [] }) => {
 
   return (
     <div className="overflow-x-auto">
-      <Table aria-label="Invoice received table" className="min-w-full" isStriped classNames={{
-        wrapper: "rounded-sm p-0",
-        thead: "",
-        th: "border-b-[1px] border-[#707070] text-[#141414] text-[16px]",
-        td: "text-[#575757] text-[14px]",
-        
-      }}>
+      <Table
+        aria-label="Invoice received table"
+        className="min-w-full"
+        isStriped
+        classNames={{
+          wrapper: "rounded-sm p-0",
+          thead: "sticky top-0 z-[11]",
+          th: "border-b-[1px] border-[#707070] bg-white text-[#141414] text-[16px]",
+          td: "text-[#575757] text-[14px]",
+          base: "overflow-auto h-[500px]",
+        }}
+      >
         <TableHeader>
-          <TableColumn className="text-center">
-            All
-          </TableColumn>
+          <TableColumn className="text-center">All</TableColumn>
           {columns.map((column) => (
             <TableColumn
               key={column.key}
@@ -78,9 +81,11 @@ const DataTable = ({ data = [] }) => {
                 onClick={() => handleRowClick(item, index)}
               >
                 <TableCell className="px-3 text-center whitespace-nowrap">
-                  <Checkbox classNames={{
-                    wrapper: "me-0"
-                  }}/>
+                  <Checkbox
+                    classNames={{
+                      wrapper: "me-0",
+                    }}
+                  />
                 </TableCell>
                 <TableCell className="px-4 py-3 whitespace-nowrap">
                   {index + 1}
